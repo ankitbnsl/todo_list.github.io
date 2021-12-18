@@ -1,3 +1,4 @@
+/*  Add background image to body , set some image property accordingly and set color to white */
 body {
     background-image: url('https://image.shutterstock.com/image-illustration/red-end-black-abstract-hd-260nw-1897086976.jpg');
     background-repeat: no-repeat;
@@ -5,12 +6,9 @@ body {
     color: white;
 }
 
-p  {
-    margin: 5px;
-    display: inline;
-    cursor: pointer;
-    font-size: 20px; color: gray;
-}
+
+
+/* set width of outer container to 50% of page width, add border, and set margin , padding */
 
 .outer {
     width: 50%;
@@ -21,11 +19,14 @@ p  {
 
 }
 
+/* style list heading  */
 h1 {
     text-align: center;
     font-size: 3rem;
 }
 
+
+/* style takeinput section -  add border , set some height and padding , also set background color to be white */
 .takeinput {
     height: 30px;
     padding: 2px;
@@ -33,12 +34,14 @@ h1 {
     background-color: white;
 }
 
+/*  make list icon in take input 25px and set color to be black */
 .takeinput i {
     font-size: 25px;
     width: 5%;
     color: black;
 }
 
+/* set the input text propertiess - font size 20px , and some height and width  */
 #input_text {
     width: 90%;
     height: 80%;
@@ -46,19 +49,33 @@ h1 {
     font-size: 20px;
 }
 
+/*  on clicking on input tag , such that it doesnt show any outline */
 #input_text:focus {
     outline: none;
 }
 
+/* ////////////////////////////////////// */
+
+/*list styling  */
+
+/* hide inital list bullet  */
 #list {
     list-style-type: none;
 }
 
+/*  make list item flex and increase its font size */
 #list li {
     display: flex;
     font-size: 20px;
+    margin: 10px;
 }
 
+/*  when hover over radio curson become pointer type */
+input[type='radio'] {
+    cursor: pointer;
+}
+
+/*  delete item (which deletes list item on clicking) - set its height, width and set display to none */
 .deleteitem {
     height: 25px;
     width: 25px;
@@ -67,14 +84,16 @@ h1 {
     display: none;
 }
 
-input[type='radio'] {
-    cursor: pointer;
-}
-
-li {
-    margin: 10px;
-}
+/*  when hover over list show the delete icon */
 
 li:hover .deleteitem {
     display: block;
+}
+
+/*  as all the button are created in p tag so styling them accordingly */
+p  {
+    margin: 5px;
+    display: inline;
+    cursor: pointer;
+    font-size: 20px; color: gray;
 }

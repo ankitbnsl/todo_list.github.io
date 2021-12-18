@@ -12,33 +12,46 @@
 <link rel="stylesheet" href="style.css">
 
 <body>
+    <!-- outer container which contain whole todo list -->
     <div class="outer">
         <h1>
             ADD TO LIST
         </h1>
 
+        <!--  Take input from user  -->
         <div class="takeinput">
+            <!-- list icon -->
             <i class="fas fa-list-alt"></i>
             <input type="text" id="input_text" name="" id="" style="border: none;">
         </div>
 
 
+        <!--  it contain 2 items complete all button (created as paragraph) and clear all completed items button -->
         <div style="display: flex;">
-           
             <p id="complete-all">  <i class="fas fa-check-double"></i>  Complete all tasks</p>
             <p id="clear" style="margin-left: auto;">Clear completed</p>
         </div>
 
+        <!--  List in which all todos are stored later -->
         <ul id="list"></ul>
 
+        <!-- It contain 4 items - total tasks, all task button , uncomplted button , complted button -->
         <div style="display: flex;">
             <p style="color: white;"> <span id="total-tasks">0</span> Tasks left</p>
+              <!-- all tasks button  -->
             <p id="all" style="margin-left: auto; color: white;">All</p>
+            
+            <!-- uncomplted tasks button -->
             <p id="uncompleted">Uncompleted</p>
+           
+           <!-- completed taks button -->
             <p id="Completed">Completed</p>
         </div>
     </div>
+
+    <!--  link to external javascript file -->
     <script src="script.js"></script>
+
 </body>
 
 </html>
